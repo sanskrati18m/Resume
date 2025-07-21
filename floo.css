@@ -1,0 +1,698 @@
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: inherit;
+}
+
+/* Font Classes */
+.instrument-serif-regular {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.instrument-serif-regular-italic {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Import FontAwesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+/* Header Section - Original Desktop Design */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 8em; /* Uniform padding with other sections */
+}
+
+.header h3 {
+  font-style: italic;
+  color: #000;
+  font-weight: 50;
+  font-family: "Instrument Serif";
+}
+
+.hamburger {
+  background-color: rgba(255, 255, 255);
+  border-radius: 100%;
+  padding: 1em;
+}
+
+/* Background Sections - Original Desktop Design */
+.main-bg {
+  background-image: url('images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: fit-content;
+  width: 100%;
+}
+
+.bg-2 {
+  background-image: url(botstream.images/bg2.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: fit-content;
+  width: 100%;
+  margin-top: -1em;
+}
+
+/* Main Content Container - Uniform Padding Applied */
+.botstream-container {
+  height: fit-content;
+  padding: 6em 8em 8em 8em; /* Uniform padding - top, right, bottom, left */
+}
+
+.body {
+  width: 45%;
+}
+
+/* Hero Content - Original Desktop Design */
+.botstream-content {
+  font-size: 64px; 
+  width: 100%;
+}
+
+.botstream-content h3 {
+  font-family: "Instrument Serif";
+  font-size: 88px;
+  font-weight: 200;
+  line-height: 1.05em;
+  letter-spacing: -0.02em;
+  margin: 0 0 30px 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tags - Original Desktop Design */
+.tag {
+  background-color: #ffffff;
+  color: #333;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 500;
+  border-radius: 8px;
+  white-space: nowrap;
+  transition: background 0.3s ease;
+}
+
+/* Text Content - Original Desktop Design */
+.body p {
+  margin: 30px 0 30px 0;
+  line-height: 1.5em;
+  font-size: 18px;
+  font-family: "Instrument Sans", sans-serif;
+  color: #000;
+}
+
+/* Buttons - Original Desktop Design */
+.button {
+  display: flex;
+}
+
+.button button {
+  width: 200px;
+  padding: 20px 24px;
+  background-color: #000;
+  font-family: "Instrument Sans", sans-serif;
+  color: white;
+  border-radius: 40px;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 5px solid #cbcbcb;
+}
+
+/* Images - Uniform Padding Applied */
+.image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  margin-top: 0; /* Removed individual margin as padding handles spacing */
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  padding: 8em; /* Uniform padding for all sides */
+}
+
+/* Overview Section - Uniform Padding Applied */
+.overview {
+  display: flex;
+  justify-content: center;
+  padding: 8em; /* Uniform padding for all sides */
+  justify-content: space-between;
+}
+
+.mission {
+  width: 30%;
+}
+
+.mission h4 {
+  font-size: 24px;
+  font-weight: 50;
+  font-family: "Instrument Serif";
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.mission p {
+  line-height: 1.5em;
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 20px;
+  margin-top: 0.5em;
+  letter-spacing: -0.02em;
+}
+
+.built-on {
+  width: 30%;
+}
+
+.built-on h4 {
+  font-size: 24px;
+  font-weight: 50;
+  font-family: "Instrument Serif";
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.built-on p {
+  line-height: 1.5em;
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 20px;
+  margin-top: 0.5em;
+  letter-spacing: -0.02em;
+}
+
+.you-can {
+  width: 30%;
+}
+
+.you-can h4 {
+  font-size: 24px;
+  font-weight: 50;
+  font-family: "Instrument Serif";
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.you-can p {
+  line-height: 1.5em;
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 20px;
+  margin-top: 0.5em;
+  letter-spacing: -0.02em;
+}
+
+/* Content Image Section - Uniform Padding Applied */
+.content-image {
+  width: 100%;
+  padding: 8em; /* Uniform padding for all sides */
+}
+
+.content-image img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Other Content Section - Uniform Padding Applied */
+.other-content {
+  display: flex;
+  padding: 8em; /* Uniform padding for all sides */
+  justify-content: space-between;
+}
+
+.key-insights {
+  width: 45%;
+}
+
+.design-goals {
+  width: 45%;
+}
+
+.key-insights h4 {
+  font-size: 24px;
+  font-weight: 50;
+  font-family: "Instrument Serif";
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.design-goals h4 {
+  font-size: 24px;
+  font-weight: 50;
+  font-family: "Instrument Serif";
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.key-insights ul {
+  margin-top: 2em;
+}
+
+.key-insights ul li {
+  font-family: "Instrument Sans", sans-serif;
+  line-height: 1.5em;
+  margin: 12px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.design-goals ul {
+  margin-top: 2em;
+}
+
+.design-goals ul li {
+  font-family: "Instrument Sans", sans-serif;
+  line-height: 1.5em;
+  margin: 12px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+/* More Projects Section - Uniform Padding Applied */
+.more-projects {
+  padding: 8em 8em 1em 8em; /* Uniform side padding, adjusted top/bottom for spacing */
+}
+
+.more-projects h1 {
+  font-size: 88px;
+  font-family: "Instrument Serif";
+  font-weight: 100;
+  font-style: italic;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.projects-section {
+  height: fit-content;
+  padding: 2em 8em 8em 8em; /* Uniform padding with other sections */
+}
+
+.section-1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 40px;
+}
+
+.section-2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.flex h3 {
+  font-weight: 100;
+  font-size: 1.5em;
+  font-family: "Instrument Sans", sans-serif;
+}
+
+.project-2 {
+  width: 40%;
+}
+
+.project-2 img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Footer - Uniform Padding Applied */
+.footer {
+  background-image: url(botstream.images/footer\ bg.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: fit-content;
+  width: 100%;
+  margin-top: -1em;
+  padding: 8em; /* Uniform padding for all sides */
+  display: block;
+  justify-content: center;
+}
+
+.more-projects p {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #747474;
+  font-size: 24px;
+}
+
+.social-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+  font-family: "Instrument Sans", sans-serif;
+}
+
+.brand-name {
+  color: white;
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  margin: 0 10px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: white;
+  color: black;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+.phone-icon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+}
+
+.phone-icon:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+/* MOBILE RESPONSIVENESS - Uniform padding maintained across breakpoints */
+
+/* Large tablets and small laptops - minimal changes */
+@media (max-width: 1200px) {
+  .header {
+    padding: 2em 4em;
+  }
+  
+  .botstream-container {
+    padding: 6em 4em 4em 4em;
+  }
+  
+  .image, .overview, .content-image, .other-content {
+    padding: 4em;
+  }
+  
+  .more-projects {
+    padding: 4em 4em 1em 4em;
+  }
+  
+  .projects-section {
+    padding: 2em 4em 4em 4em;
+  }
+  
+  .footer {
+    padding: 4em;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .header {
+    padding: 1.5em 2em;
+  }
+  
+  .botstream-container {
+    padding: 4em 2em;
+  }
+  
+  .body {
+    width: 100%;
+  }
+  
+  .botstream-content h3 {
+    font-size: 64px;
+  }
+  
+  .image {
+    padding: 2em;
+  }
+  
+  .image img {
+    margin-top: 0;
+  }
+  
+  .overview {
+    flex-direction: column;
+    padding: 2em;
+    gap: 3em;
+  }
+  
+  .mission, .built-on, .you-can {
+    width: 100%;
+  }
+  
+  .content-image, .other-content {
+    padding: 2em;
+  }
+  
+  .other-content {
+    flex-direction: column;
+    gap: 3em;
+  }
+  
+  .key-insights, .design-goals {
+    width: 100%;
+  }
+  
+  .more-projects {
+    padding: 2em 2em 1em 2em;
+  }
+  
+  .projects-section {
+    padding: 2em;
+  }
+  
+  .section-1, .section-2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+  
+  .project-2 {
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  .footer {
+    padding: 2em;
+  }
+  
+  .social-footer {
+    flex-direction: column;
+    gap: 2em;
+    text-align: center;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .header {
+    padding: 1em;
+  }
+  
+  .botstream-container {
+    padding: 3em 1em;
+  }
+  
+  .botstream-content h3 {
+    font-size: 48px;
+  }
+  
+  .body p {
+    font-size: 16px;
+    margin: 20px 0;
+  }
+  
+  .tag {
+    font-size: 12px;
+    padding: 4px 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  
+  .button button {
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .image, .overview, .content-image, .other-content {
+    padding: 1em;
+  }
+  
+  .overview {
+    gap: 3em;
+  }
+  
+  .mission h4, .built-on h4, .you-can h4,
+  .key-insights h4, .design-goals h4 {
+    font-size: 20px;
+  }
+  
+  .mission p, .built-on p, .you-can p {
+    font-size: 16px;
+  }
+  
+  .key-insights ul li, .design-goals ul li {
+    font-size: 16px;
+    margin: 8px;
+  }
+  
+  .more-projects {
+    padding: 1em 1em 1em 1em;
+  }
+  
+  .more-projects h1 {
+    font-size: 64px;
+  }
+  
+  .more-projects p {
+    font-size: 16px;
+    padding: 0;
+  }
+  
+  .projects-section {
+    padding: 1em;
+  }
+  
+  .project-2 {
+    width: 100%;
+  }
+  
+  .flex {
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-start;
+  }
+  
+  .footer {
+    padding: 1em;
+  }
+  
+  .brand-name {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  
+  .social-icons a {
+    width: 44px;
+    height: 44px;
+    font-size: 16px;
+    margin: 0 5px;
+  }
+  
+  .phone-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+  
+  .contact-info {
+    font-size: 14px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 360px) {
+  .header h3 {
+    font-size: 14px;
+  }
+  
+  .hamburger {
+    padding: 0.7em;
+    font-size: 14px;
+  }
+  
+  .botstream-content h3 {
+    font-size: 40px;
+  }
+  
+  .body p {
+    font-size: 14px;
+  }
+  
+  .tag {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+  
+  .button button {
+    padding: 16px 20px;
+    font-size: 14px;
+  }
+  
+  .mission h4, .built-on h4, .you-can h4,
+  .key-insights h4, .design-goals h4 {
+    font-size: 16px;
+  }
+  
+  .mission p, .built-on p, .you-can p {
+    font-size: 16px;
+  }
+  
+  .key-insights ul li, .design-goals ul li {
+    font-size: 16px;
+  }
+  
+  .more-projects h1 {
+    font-size: 48px;
+  }
+  
+  .more-projects p {
+    font-size: 16px;
+  }
+  
+  .flex h3 {
+    font-size: 1.25em;
+  }
+}
