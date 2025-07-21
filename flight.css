@@ -452,280 +452,66 @@
   padding-right: max(2em, var(--safe-right, 0px));
 }
 
-/* MOBILE RESPONSIVENESS - Uniform padding maintained across breakpoints */
-
-/* Large tablets and small laptops - minimal changes */
-@media (max-width: 1200px) {
-  .header {
-    padding: 2em 4em;
-  }
-  
-  .botstream-container {
-    padding: 6em 4em 4em 4em;
-  }
-  
-  .image, .overview, .content-image, .other-content {
-    padding: 4em;
-  }
-  
-  .more-projects {
-    padding: 4em 4em 1em 4em;
-  }
-  
-  .projects-section {
-    padding: 2em 4em 4em 4em;
-  }
-  
-  .footer {
-    padding: 4em;
-  }
-}
-
-/* Tablets */
+/* Remove all media queries except for @media (max-width: 768px). Merge mobile styles here. */
 @media (max-width: 768px) {
-  .header {
-    padding-top: calc(1.5em + var(--safe-top, 0px));
-    padding-left: max(1.5em, var(--safe-left, 0px));
-    padding-right: max(1.5em, var(--safe-right, 0px));
-  }
-  .footer {
-    padding-bottom: calc(2em + var(--safe-bottom, 0px));
-    padding-left: max(2em, var(--safe-left, 0px));
-    padding-right: max(2em, var(--safe-right, 0px));
-  }
-  .main-bg, .bg-2, .botstream-container, .projects-section, .more-projects {
-    padding-left: max(1em, var(--safe-left, 0px));
-    padding-right: max(1em, var(--safe-right, 0px));
-  }
-  
-  .body {
-    width: 100%;
-  }
-  
-  .botstream-content h3 {
-    font-size: 64px;
-  }
-  
-  .image {
-    padding: 2em;
-  }
-  
-  .image img {
-    margin-top: 0;
-  }
-  
-  .overview {
-    flex-direction: column;
-    padding: 2em;
-    gap: 3em;
-  }
-  
-  .mission, .built-on, .you-can {
-    width: 100%;
-  }
-  
-  .content-image, .other-content {
-    padding: 2em;
-  }
-  
-  .other-content {
-    flex-direction: column;
-    gap: 3em;
-  }
-  
-  .key-insights, .design-goals {
-    width: 100%;
-  }
-  
-  .more-projects {
-    padding: 2em 2em 1em 2em;
-  }
-  
-  .projects-section {
-    padding: 2em;
-  }
-  
-  .section-1, .section-2 {
-    flex-direction: column;
-    align-items: center;
-    gap: 2em;
-  }
-  
-  .project-2 {
-    width: 80%;
-    max-width: 500px;
-  }
-  
-  .footer {
-    padding: 2em;
-  }
-  
-  .social-footer {
-    flex-direction: column;
-    gap: 2em;
-    text-align: center;
-  }
-}
-
-/* Mobile phones */
-@media (max-width: 480px) {
-  .header {
-    padding: 1em;
-  }
-  
-  .botstream-container {
-    padding: 3em 1em;
-  }
-  
-  .botstream-content h3 {
-    font-size: 48px;
-  }
-  
-  .body p {
-    font-size: 16px;
-    margin: 20px 0;
-  }
-  
-  .tag {
-    font-size: 12px;
-    padding: 4px 10px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    display: inline-block;
-  }
-  
-  .button button {
-    width: 100%;
-    max-width: 250px;
-  }
-  
-  .image, .overview, .content-image, .other-content {
-    padding: 1em;
-  }
-  
-  .overview {
-    gap: 3em;
-  }
-  
-  .mission h4, .built-on h4, .you-can h4,
-  .key-insights h4, .design-goals h4 {
-    font-size: 20px;
-  }
-  
-  .mission p, .built-on p, .you-can p {
-    font-size: 16px;
-  }
-  
-  .key-insights ul li, .design-goals ul li {
-    font-size: 16px;
-    margin: 8px;
-  }
-  
-  .more-projects {
-    padding: 1em 1em 1em 1em;
-  }
-  
-  .more-projects h1 {
-    font-size: 64px;
-  }
-  
-  .more-projects p {
-    font-size: 16px;
-    padding: 0;
-  }
-  
-  .projects-section {
-    padding: 1em;
-  }
-  
-  .project-2 {
-    width: 100%;
-  }
-  
-  .flex {
-    flex-direction: column;
-    gap: 1em;
-    align-items: flex-start;
-  }
-  
-  .footer {
-    padding: 1em;
-  }
-  
-  .brand-name {
-    font-size: 16px;
-    padding: 8px 16px;
-  }
-  
-  .social-icons a {
-    width: 44px;
-    height: 44px;
-    font-size: 16px;
-    margin: 0 5px;
-  }
-  
-  .phone-icon {
-    width: 36px;
-    height: 36px;
-    font-size: 14px;
-  }
-  
-  .contact-info {
-    font-size: 14px;
-  }
-}
-
-/* Extra small phones */
-@media (max-width: 360px) {
-  .header h3 {
-    font-size: 14px;
-  }
-  
-  .hamburger {
-    padding: 0.7em;
-    font-size: 14px;
-  }
-  
-  .botstream-content h3 {
-    font-size: 40px;
-  }
-  
-  .body p {
-    font-size: 14px;
-  }
-  
-  .tag {
-    font-size: 11px;
-    padding: 3px 8px;
-  }
-  
-  .button button {
-    padding: 16px 20px;
-    font-size: 14px;
-  }
-  
-  .mission h4, .built-on h4, .you-can h4,
-  .key-insights h4, .design-goals h4 {
-    font-size: 16px;
-  }
-  
-  .mission p, .built-on p, .you-can p {
-    font-size: 16px;
-  }
-  
-  .key-insights ul li, .design-goals ul li {
-    font-size: 16px;
-  }
-  
-  .more-projects h1 {
-    font-size: 48px;
-  }
-  
-  .more-projects p {
-    font-size: 16px;
-  }
-  
-  .flex h3 {
-    font-size: 1.25em;
-  }
+    /* Combine all mobile-specific styles here from previous 480px, 980px, 1024px queries */
+    .header {
+        padding: 1.5em 2em;
+    }
+    .botstream-container {
+        padding: 4em 2em;
+    }
+    .body {
+        width: 100%;
+    }
+    .botstream-content h3 {
+        font-size: 64px;
+    }
+    .image {
+        padding: 2em;
+    }
+    .image img {
+        margin-top: 0;
+    }
+    .overview {
+        flex-direction: column;
+        padding: 2em;
+        gap: 3em;
+    }
+    .mission, .built-on, .you-can {
+        width: 100%;
+    }
+    .content-image, .other-content {
+        padding: 2em;
+    }
+    .other-content {
+        flex-direction: column;
+        gap: 3em;
+    }
+    .key-insights, .design-goals {
+        width: 100%;
+    }
+    .more-projects {
+        padding: 2em 2em 1em 2em;
+    }
+    .projects-section {
+        padding: 2em;
+    }
+    .section-1, .section-2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+    .project-2 {
+        width: 80%;
+        max-width: 500px;
+    }
+    .footer {
+        padding: 2em;
+    }
+    .social-footer {
+        flex-direction: column;
+        gap: 2em;
+        text-align: center;
+    }
 }
