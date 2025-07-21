@@ -427,6 +427,31 @@
   transition: all 0.3s ease;
 }
 
+/* --- SAFE AREA INSETS FOR IPHONE --- */
+:root {
+  --safe-top: env(safe-area-inset-top);
+  --safe-bottom: env(safe-area-inset-bottom);
+  --safe-left: env(safe-area-inset-left);
+  --safe-right: env(safe-area-inset-right);
+}
+
+.header {
+  padding-top: calc(2em + var(--safe-top, 0px));
+  padding-left: max(2em, var(--safe-left, 0px));
+  padding-right: max(2em, var(--safe-right, 0px));
+}
+
+.footer {
+  padding-bottom: calc(8em + var(--safe-bottom, 0px));
+  padding-left: max(8em, var(--safe-left, 0px));
+  padding-right: max(8em, var(--safe-right, 0px));
+}
+
+.main-bg, .bg-2, .botstream-container, .projects-section, .more-projects {
+  padding-left: max(2em, var(--safe-left, 0px));
+  padding-right: max(2em, var(--safe-right, 0px));
+}
+
 /* MOBILE RESPONSIVENESS - Uniform padding maintained across breakpoints */
 
 /* Large tablets and small laptops - minimal changes */
@@ -459,11 +484,18 @@
 /* Tablets */
 @media (max-width: 768px) {
   .header {
-    padding: 1.5em 2em;
+    padding-top: calc(1.5em + var(--safe-top, 0px));
+    padding-left: max(1.5em, var(--safe-left, 0px));
+    padding-right: max(1.5em, var(--safe-right, 0px));
   }
-  
-  .botstream-container {
-    padding: 4em 2em;
+  .footer {
+    padding-bottom: calc(2em + var(--safe-bottom, 0px));
+    padding-left: max(2em, var(--safe-left, 0px));
+    padding-right: max(2em, var(--safe-right, 0px));
+  }
+  .main-bg, .bg-2, .botstream-container, .projects-section, .more-projects {
+    padding-left: max(1em, var(--safe-left, 0px));
+    padding-right: max(1em, var(--safe-right, 0px));
   }
   
   .body {
