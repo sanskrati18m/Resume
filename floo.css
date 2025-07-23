@@ -20,31 +20,12 @@
 }
 
 /* Import FontAwesome */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
 
-/* Header Section - Original Desktop Design */
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 2em 8em; /* Uniform padding with other sections */
-}
-
-.header h3 {
-  font-style: italic;
-  color: #000;
-  font-weight: 50;
-  font-family: "Instrument Serif";
-}
-
-.hamburger {
-  background-color: rgba(255, 255, 255);
-  border-radius: 100%;
-  padding: 1em;
-}
 
 /* Background Sections - Original Desktop Design */
 .main-bg {
-  background-image: url('images/bg.jpg');
+  background-image: url("images/bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -65,16 +46,17 @@
 /* Main Content Container - Uniform Padding Applied */
 .botstream-container {
   height: fit-content;
-  padding: 6em 8em 8em 8em; /* Uniform padding - top, right, bottom, left */
+  padding: 6em 8em 8em 8em;
 }
 
 .body {
   width: 45%;
+  /* background-color: red; */
 }
 
 /* Hero Content - Original Desktop Design */
 .botstream-content {
-  font-size: 64px; 
+  font-size: 64px;
   width: 100%;
 }
 
@@ -94,6 +76,7 @@
   background-color: #ffffff;
   color: #333;
   padding: 6px 14px;
+  border: 1px solid #a5a5a5;
   font-size: 14px;
   font-family: "Instrument Sans", sans-serif;
   font-weight: 500;
@@ -114,6 +97,7 @@
 /* Buttons - Original Desktop Design */
 .button {
   display: flex;
+  padding-top: 12em;
 }
 
 .button button {
@@ -133,101 +117,76 @@
   width: 100%;
   object-fit: cover;
   border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  margin-top: 0; /* Removed individual margin as padding handles spacing */
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); */
 }
 
 .image {
   display: flex;
   justify-content: center;
-  padding: 8em; /* Uniform padding for all sides */
+  padding: 2em 8em 8em 8em; /* Uniform padding for all sides */
+  /* background-color: red;665 */
 }
 
 /* Overview Section - Uniform Padding Applied */
 .overview {
   display: flex;
-  justify-content: center;
-  padding: 8em; /* Uniform padding for all sides */
   justify-content: space-between;
+  padding: 8em;
 }
 
-.mission {
+.mission,
+.built-on,
+.you-can{
   width: 30%;
 }
 
-.mission h4 {
-  font-size: 24px;
+.mission h4,
+.built-on h4,
+.you-can h4{
+  font-size: 40px;
   font-weight: 50;
   font-family: "Instrument Serif";
   font-style: italic;
   color: rgba(0, 0, 0, 0.5);
-}
-
-.mission p {
-  line-height: 1.5em;
-  font-family: "Instrument Sans", sans-serif;
-  font-size: 20px;
-  margin-top: 0.5em;
-  letter-spacing: -0.02em;
-}
-
-.built-on {
-  width: 30%;
-}
-
-.built-on h4 {
-  font-size: 24px;
-  font-weight: 50;
-  font-family: "Instrument Serif";
-  font-style: italic;
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.built-on p {
-  line-height: 1.5em;
-  font-family: "Instrument Sans", sans-serif;
-  font-size: 20px;
-  margin-top: 0.5em;
-  letter-spacing: -0.02em;
-}
-
-.you-can {
-  width: 30%;
 }
 
 .you-can h4 {
-  font-size: 24px;
-  font-weight: 50;
-  font-family: "Instrument Serif";
-  font-style: italic;
-  color: rgba(0, 0, 0, 0.5);
+  font-size: 24px; /* Override size for .you-can h4 */
 }
 
+.mission p,
+.built-on p,
 .you-can p {
-  line-height: 1.5em;
   font-family: "Instrument Sans", sans-serif;
   font-size: 20px;
-  margin-top: 0.5em;
+  line-height: 1.5em;
   letter-spacing: -0.02em;
-}
-
-/* Content Image Section - Uniform Padding Applied */
+  margin-top: 0.5em;
+}/* Content Image Section - Uniform Padding Applied */
 .content-image {
   width: 100%;
-  padding: 8em; /* Uniform padding for all sides */
+  padding: 2em 6em 8em 6em; /* Uniform padding for all sides */
+  transition: transform 0.3s ease-in-out;
 }
 
 .content-image img {
+  
   object-fit: cover;
   width: 100%;
   border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out;
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); */
 }
+
+/* .content-image:hover img {
+  transform: scale(1.1);
+} */
+
 
 /* Other Content Section - Uniform Padding Applied */
 .other-content {
   display: flex;
-  padding: 8em; /* Uniform padding for all sides */
+  padding: 0em 9em;
   justify-content: space-between;
 }
 
@@ -239,16 +198,9 @@
   width: 45%;
 }
 
-.key-insights h4 {
-  font-size: 24px;
-  font-weight: 50;
-  font-family: "Instrument Serif";
-  font-style: italic;
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.design-goals h4 {
-  font-size: 24px;
+.key-insights h4,
+.design-goals h4{
+  font-size: 40px;
   font-weight: 50;
   font-family: "Instrument Serif";
   font-style: italic;
@@ -281,7 +233,7 @@
 
 /* More Projects Section - Uniform Padding Applied */
 .more-projects {
-  padding: 8em 8em 1em 8em; /* Uniform side padding, adjusted top/bottom for spacing */
+  padding: 4em 8em 1em 8em; /* Uniform side padding, adjusted top/bottom for spacing */
 }
 
 .more-projects h1 {
@@ -296,13 +248,6 @@
 .projects-section {
   height: fit-content;
   padding: 2em 8em 8em 8em; /* Uniform padding with other sections */
-}
-
-.section-1 {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  gap: 40px;
 }
 
 .section-2 {
@@ -334,49 +279,53 @@
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
-
-/* Footer - Uniform Padding Applied */
+/* ------------------ Footer ------------------ */
 .footer {
-  background-image: url(botstream.images/footer\ bg.svg);
+  background-image: url("botstream.images/footer%20bg.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: fit-content;
-  width: 100%;
-  margin-top: -1em;
-  padding: 8em; /* Uniform padding for all sides */
-  display: block;
-  justify-content: center;
+  padding: 4em 8em;
+  display: flex;
+  flex-direction: column;
+  gap: 8em;
 }
 
-.more-projects p {
+.more h1, .more p {
   text-align: center;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  color: #747474;
+}
+
+.more h1 {
+  font-size: 100px;
+  font-family: "Instrument Serif";
+  font-weight: 100;
+  font-style: italic;
+  color: #fff;
+}
+
+.more p {
   font-size: 24px;
+  color: #747474;
 }
 
 .social-footer {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 40px 0;
-  font-family: "Instrument Sans", sans-serif;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  text-align: center;
 }
 
 .brand-name {
-  color: white;
-  background-color: white;
-  color: black;
-  font-weight: 500;
+  color: #000;
+  background-color: #fff;
   padding: 10px 20px;
   border-radius: 50px;
-  text-decoration: none;
   font-style: italic;
+  font-weight: 500;
+  text-decoration: none;
   font-size: 18px;
-  transition: all 0.3s ease;
 }
 
 .social-icons a {
@@ -394,37 +343,11 @@
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-.social-icons a:hover {
+.social-icons a:hover, .phone-icon:hover {
   background-color: white;
   color: black;
 }
 
-.contact-info {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: white;
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-}
-
-.phone-icon {
-  width: 40px;
-  height: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 16px;
-}
-
-.phone-icon:hover {
-  background-color: white;
-  color: black;
-  transition: all 0.3s ease;
-}
 
 /* --- SAFE AREA INSETS FOR IPHONE --- */
 :root {
@@ -446,71 +369,128 @@
   padding-right: max(8em, var(--safe-right, 0px));
 }
 
-.main-bg, .bg-2, .botstream-container, .projects-section, .more-projects {
+.main-bg,
+.bg-2,
+.botstream-container,
+.projects-section,
+.more-projects {
   padding-left: max(2em, var(--safe-left, 0px));
   padding-right: max(2em, var(--safe-right, 0px));
 }
 
-/* Remove all media queries except for @media (max-width: 768px). Merge mobile styles here. */
 @media (max-width: 768px) {
-    /* Combine all mobile-specific styles here from previous 480px, 980px, 1024px queries */
-    .header {
-        padding: 1.5em 2em;
+
+  .botstream-container {
+    padding: 4em 2em 0em 2em;
+  }
+  .body {
+    width: 100%;
+  }
+  .botstream-content h3 {
+    font-size: 64px;
+  }
+
+  .button{
+    padding-top: 6em;
+    
+  }
+  .button  button{
+    width: 90%;
+  }
+  .image {
+    padding: 1em;
+    width: 100%;
+  }
+  .image img {
+    margin-top: 2em; 
+    width: 110%;
+  }
+  .content-image{
+    padding: 1em;
+    width: 100%;
+    align-items: center;
+  }
+  .content-image img {
+    width: 100%;
+    scale: 1.1;
+    align-items: center;
+    /* background: blue; */
+  }
+  .overview {
+    flex-direction: column;
+    padding: 2em;
+    gap: 3em;
+  }
+  .mission,
+  .built-on,
+  .you-can {
+    width: 100%;
+  }
+  .other-content {
+    padding: 2em;
+  }
+  .other-content {
+    flex-direction: column;
+    gap: 3em;
+  }
+  .key-insights,
+  .design-goals {
+    width: 100%;
+  }
+  .more-projects {
+    padding: 0;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .more-projects h1 {
+    font-size: 60px;
+    padding-bottom: 20px;
+  }
+  .projects-section {
+    width: 100%;
+    padding: 0;
+  }
+  .section-2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+  }
+  .projects-section h1, .main-bg2 h1, .more h1 {
+        font-size: 48px;
     }
-    .botstream-container {
-        padding: 4em 2em;
-    }
-    .body {
+
+    .project-2 {
         width: 100%;
     }
-    .botstream-content h3 {
-        font-size: 64px;
-    }
-    .image {
-        padding: 2em;
-    }
-    .image img {
-        margin-top: 0;
-    }
-    .overview {
-        flex-direction: column;
-        padding: 2em;
-        gap: 3em;
-    }
-    .mission, .built-on, .you-can {
-        width: 100%;
-    }
-    .content-image, .other-content {
-        padding: 2em;
-    }
-    .other-content {
-        flex-direction: column;
-        gap: 3em;
-    }
-    .key-insights, .design-goals {
-        width: 100%;
-    }
-    .more-projects {
-        padding: 2em 2em 1em 2em;
-    }
-    .projects-section {
-        padding: 2em;
-    }
-    .section-1, .section-2 {
+
+    .section-2 {
         flex-direction: column;
         align-items: center;
-        gap: 2em;
+        gap: 20px;
     }
-    .project-2 {
-        width: 80%;
-        max-width: 500px;
+
+    .tags{
+        display: flex;
+        justify-content: start;
+        gap: 10px;
+        padding: 0;
     }
-    .footer {
-        padding: 2em;
+    .tag {
+        /* background-color: red; */
+        /* padding: auto; */
+        padding: 4px 8px;
+        height: 25px;
     }
-    .social-footer {
-        flex-direction: column;
-        gap: 2em;
-        text-align: center;
+    .more p {
+        font-size: 18px;
     }
+  .footer {
+    padding: 2em;
+  }
+  .social-footer {
+    flex-direction: column;
+    gap: 2em;
+    text-align: center;
+  }
 }
