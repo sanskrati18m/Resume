@@ -96,7 +96,7 @@
 
 /* Buttons - Original Desktop Design */
 .button {
-  display: flex;
+  /* display: flex; */
   padding-top: 12em;
 }
 

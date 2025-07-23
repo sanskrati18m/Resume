@@ -96,7 +96,6 @@
 
 /* Buttons - Original Desktop Design */
 .button {
-  display: flex;
   padding-top: 12em;
 }
 
@@ -395,7 +394,8 @@
     
   }
   .button  button{
-    width: 90%;
+    margin: 0;
+    width: 100%;
   }
   .image {
     padding: 1em;
